@@ -1,0 +1,10 @@
+n = int(input())  # 讀取隊伍總數
+teams = 0   # 初始化的隊伍數量為 0
+
+# 依次檢查每個隊伍的人數是否符合標準
+for _ in range(n):
+    team = int(input())  # 讀取每個隊伍的人數
+    if team % 3 == 0 and team != 0:  # 如果符合，則總數加一
+        teams += 1
+
+print(teams)  # 輸出隊伍數量
